@@ -1,0 +1,1 @@
+public class A{public static void main(String[]a){StringBuilder s=new StringBuilder(a[0]);for(int x=s.length()-2;x>0;x-=2){s.setCharAt(x,(char)((((s.charAt(x))+1)-48)%10+48));if((s.charAt(x))==48){s.insert(1,(x==1)?"1,":"");continue;}break;}System.out.println(s+"");}}
